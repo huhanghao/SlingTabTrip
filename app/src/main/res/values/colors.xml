@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark_green">#30C0A0</color>
+    <color name="transparent_nocolor">#00000000</color>
+    <color name="gray">#666666</color>
+    <color name="gainsboro">#dcdcdc</color> <!-- 淡灰色 -->
+</resources>

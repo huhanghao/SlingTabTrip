@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huhanghao.slingtabtrip.MainActivity">
+
+    <com.example.huhanghao.slingtabtrip.scrolltab.ScrollableTabView
+        android:id="@+id/scroll_tab"
+        android:layout_width="368dp"
+        android:layout_height="40dp"/>
+
+</android.support.constraint.ConstraintLayout>
