@@ -1,4 +1,4 @@
-package com.example.huhanghao.slingtabtrip.scrolltab;
+package com.example.huhanghao.slingtabtrip.slidingtab;
 
 import android.view.View;
 

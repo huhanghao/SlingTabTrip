@@ -6,8 +6,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.huhanghao.slingtabtrip.scrolltab.ScrollableTabView;
-import com.example.huhanghao.slingtabtrip.scrolltab.ScrollingTabsAdapter;
+import com.example.huhanghao.slingtabtrip.slidingtab.SlidingTabView;
+import com.example.huhanghao.slingtabtrip.slidingtab.SlidingTabsAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ScrollableTabView scrollTab = (ScrollableTabView) findViewById(R.id.scroll_tab);
+        SlidingTabView scrollTab = (SlidingTabView) findViewById(R.id.scroll_tab);
 
         String[] mTitles = new String[8];
         mTitles[0] = "tab1";
@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         mTitles[7] = "tab8";
 
         scrollTab.setBackground(getMyDrawable(R.drawable.rectangle_gray_top_4radius_bg));
-        ScrollingTabsAdapter scrollingTabsAdapter = new ScrollingTabsAdapter(mTitles,R.layout.app_healthmanager_tabs);
+        SlidingTabsAdapter scrollingTabsAdapter = new SlidingTabsAdapter(mTitles,R.layout.app_healthmanager_tabs);
         scrollTab.setAdapter(scrollingTabsAdapter, mTitles.length);
         scrollTab.setViewPage(0);
-        scrollTab.setTabCallBack(new ScrollableTabView.TabCallBack() {
+        scrollTab.setTabCallBack(new SlidingTabView.TabCallBack() {
             @Override
             public void onPageSelected(int position) {
 

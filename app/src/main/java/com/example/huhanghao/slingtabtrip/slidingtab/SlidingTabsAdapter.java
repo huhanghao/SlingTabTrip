@@ -1,4 +1,4 @@
-package com.example.huhanghao.slingtabtrip.scrolltab;
+package com.example.huhanghao.slingtabtrip.slidingtab;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,16 +13,16 @@ import java.util.Set;
 
 
 
-public class ScrollingTabsAdapter implements TabAdapter {
+public class SlidingTabsAdapter implements TabAdapter {
 
 	private int layoutStyle = -1;
 	private String[] mTitles;
 
-	public ScrollingTabsAdapter(String[] mTitles) {
+	public SlidingTabsAdapter(String[] mTitles) {
 		this.mTitles = mTitles;
 	}
 
-	public ScrollingTabsAdapter(String[] mTitles, int layoutStyle) {
+	public SlidingTabsAdapter(String[] mTitles, int layoutStyle) {
 		this.mTitles = mTitles;
 		this.layoutStyle = layoutStyle;
 	}

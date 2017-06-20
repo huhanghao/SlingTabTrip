@@ -1,4 +1,4 @@
-package com.example.huhanghao.slingtabtrip.scrolltab;
+package com.example.huhanghao.slingtabtrip.slidingtab;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 
 
-public class ScrollableTabView extends HorizontalScrollView {
+public class SlidingTabView extends HorizontalScrollView {
 	private int tabNum;
 	private int currentTab;
 
@@ -21,15 +21,15 @@ public class ScrollableTabView extends HorizontalScrollView {
 	private TabCallBack tabCallBack;
 	private LinearLayout.LayoutParams childParams = new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,
 			android.view.ViewGroup.LayoutParams.MATCH_PARENT);
-	public ScrollableTabView(Context context) {
+	public SlidingTabView(Context context) {
 		this(context, null);
 	}
 
-	public ScrollableTabView(Context context, AttributeSet attrs) {
+	public SlidingTabView(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 	}
 
-	public ScrollableTabView(Context context, AttributeSet attrs, int defStyle) {
+	public SlidingTabView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs);
 		this.setHorizontalScrollBarEnabled(false);
 		this.setHorizontalFadingEdgeEnabled(false);
